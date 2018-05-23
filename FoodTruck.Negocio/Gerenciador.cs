@@ -16,7 +16,7 @@ namespace FoodTruck.Negocio
         {
             Validacao validacao = new Validacao();
             banco.Clientes.Remove(cliente);
-            banco.SalvarDados();
+            banco.SaveChanges();
             return validacao;
         }
 
@@ -27,12 +27,12 @@ namespace FoodTruck.Negocio
             clienteBanco.Nome = clienteAlterado.Nome;
             clienteBanco.CPF = clienteAlterado.CPF;
             clienteBanco.Email = clienteAlterado.Email;
-            this.banco.SalvarDados();
+            this.banco.SaveChanges();
             return validacao;
         }
 
         public Gerenciador()
-        {
+        { 
             Bebida bebida = new Bebida();
             Lanche lanche = new Lanche();
         }
@@ -79,7 +79,7 @@ namespace FoodTruck.Negocio
             if (validacao.Valido)
             {
                 this.banco.Clientes.Add(clienteAdicionado);
-                this.banco.SalvarDados();
+                this.banco.SaveChanges();
             }
             return validacao;
         }
@@ -110,7 +110,7 @@ namespace FoodTruck.Negocio
             if (validacao.Valido)
             {
                 this.banco.Bebidas.Add(bebidaCadastrada);
-                this.banco.SalvarDados();
+                this.banco.SaveChanges();
             }
             return validacao;
         }
@@ -137,7 +137,7 @@ namespace FoodTruck.Negocio
             if (validacao.Valido)
             {
                 this.banco.Lanches.Add(lancheCadastrado);
-                this.banco.SalvarDados();
+                this.banco.SaveChanges();
             }
             return validacao;
         }
@@ -177,7 +177,7 @@ namespace FoodTruck.Negocio
             }
 
             this.banco.Pedidos.Add(pedidoCadastrado);
-            this.banco.SalvarDados();
+            this.banco.SaveChanges();
             return validacao;
         }
 
