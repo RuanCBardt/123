@@ -106,29 +106,37 @@ namespace FoodTruck.Grafico
 
         private void clientesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            TelaListaClientes tela = new TelaListaClientes();
-            tela.MdiParent = this;
+            TelaListaClientes tela = new TelaListaClientes
+            {
+                MdiParent = this
+            };
             tela.Show();
         }
 
         private void bebidasToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            TelaListaBebidas tela = new TelaListaBebidas();
-            tela.MdiParent = this;
+            TelaListaBebidas tela = new TelaListaBebidas
+            {
+                MdiParent = this
+            };
             tela.Show();
         }
 
         private void lanchesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            TelaListaLanche tela = new TelaListaLanche();
-            tela.MdiParent = this;
+            TelaListaLanche tela = new TelaListaLanche
+            {
+                MdiParent = this
+            };
             tela.Show();
         }
 
         private void novoPedidoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            AdicionarPedidos tela = new AdicionarPedidos();
-            tela.MdiParent = this;
+            AdicionarPedidos tela = new AdicionarPedidos
+            {
+                MdiParent = this
+            };
             tela.Show();
         }
 
@@ -139,7 +147,11 @@ namespace FoodTruck.Grafico
 
         private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TelaListaPedidos tela = new TelaListaPedidos
+            {
+                MdiParent = this
+            };
+            tela.Show();
         }
     }
 }
