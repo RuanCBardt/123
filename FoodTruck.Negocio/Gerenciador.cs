@@ -12,6 +12,43 @@ namespace FoodTruck.Negocio
     {
         private Banco banco = new Banco();
 
+        public Validacao RemoverLanche(Lanche lanche)
+        {
+            Validacao validacao = new Validacao();
+            banco.Lanches.Remove(lanche);
+            banco.SaveChanges();
+            return validacao;
+        }
+
+        public Validacao AlterarLanche(Lanche LancheAlterado)
+        {
+            Validacao validacao = new Validacao();
+            Lanche lancheBanco = BuscaLanchePorId(LancheAlterado.Id);
+            lancheBanco.Nome = LancheAlterado.Nome;
+            lancheBanco.Valor = LancheAlterado.Valor;
+            this.banco.SaveChanges();
+            return validacao;
+        }
+
+        public Validacao RemoverBebida(Bebida bebida)
+        {
+            Validacao validacao = new Validacao();
+            banco.Bebidas.Remove(bebida);
+            banco.SaveChanges();
+            return validacao;
+        }
+
+        public Validacao AlterarBebida(Bebida bebidaAlterada)
+        {
+            Validacao validacao = new Validacao();
+            Bebida bebidaBanco = BuscaBebidaPorId(bebidaAlterada.Id);
+            bebidaBanco.Nome = bebidaAlterada.Nome;
+            bebidaBanco.Valor = bebidaAlterada.Valor;
+            bebidaBanco.Tamanho = bebidaAlterada.Tamanho;
+            this.banco.SaveChanges();
+            return validacao;
+        }
+
         public Validacao RemoverCliente(Cliente cliente)
         {
             Validacao validacao = new Validacao();
@@ -32,7 +69,7 @@ namespace FoodTruck.Negocio
         }
 
         public Gerenciador()
-        { 
+        {
             Bebida bebida = new Bebida();
             Lanche lanche = new Lanche();
         }
@@ -63,12 +100,12 @@ namespace FoodTruck.Negocio
 
             if (String.IsNullOrEmpty(clienteAdicionado.Nome))
             {
-                validacao.Mensagens.Add("Nome" , "O nome não pode ser nulo ou vazio");
+                validacao.Mensagens.Add("Nome", "O nome não pode ser nulo ou vazio");
             }
 
             if (String.IsNullOrEmpty(clienteAdicionado.Email))
             {
-                validacao.Mensagens.Add("E-mail","O e-mail não pode ser nulo");
+                validacao.Mensagens.Add("E-mail", "O e-mail não pode ser nulo");
             }
 
             if (!clienteAdicionado.Email.Contains("@") && validacao.Mensagens.Count == 0)
@@ -183,6 +220,16 @@ namespace FoodTruck.Negocio
         public Cliente BuscaClientePorId(long id)
         {
             return this.banco.Clientes.Where(c => c.Id == id).FirstOrDefault();
+        }
+
+        public Bebida BuscaBebidaPorId(long id2)
+        {
+            return this.banco.Bebidas.Where(d => d.Id == id2).FirstOrDefault();
+        }
+
+        public Lanche BuscaLanchePorId(long id3)
+        {
+            return this.banco.Lanches.Where(e => e.Id == id3).FirstOrDefault();
         }
 
         public List<Cliente> TodosOsClientes()

@@ -43,7 +43,7 @@ namespace FoodTruck.Grafico
 
         private bool VerificarSelecao()
         {
-            if (dgClientes.SelectedRows.Count <=0)
+            if (dgClientes.SelectedRows.Count <= 0)
             {
                 MessageBox.Show("Selecione uma linha");
                 return false;
@@ -68,7 +68,7 @@ namespace FoodTruck.Grafico
 
         private void btRemover_Click(object sender, EventArgs e)
         {
-            if(VerificarSelecao())
+            if (VerificarSelecao())
             {
                 DialogResult resultado = MessageBox.Show("Tem certeza?", "Quer remover?", MessageBoxButtons.OKCancel);
                 if (resultado == DialogResult.OK)

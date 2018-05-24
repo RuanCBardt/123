@@ -24,7 +24,7 @@ namespace FoodTruck.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Cliente cliente = new Cliente();
-            if(Int64.TryParse(tbId.Text, out long value))
+            if (Int64.TryParse(tbId.Text, out long value))
             {
                 cliente.Id = value;
             }
@@ -39,14 +39,14 @@ namespace FoodTruck.Grafico
             Validacao validacao;
             if (ClienteSelecionado == null)
             {
-               validacao = Program.Gerenciador.AdicionarCliente(cliente);
+                validacao = Program.Gerenciador.AdicionarCliente(cliente);
             }
             else
             {
                 validacao = Program.Gerenciador.AlterarCliente(cliente);
             }
 
-            
+
             if (!validacao.Valido)
             {
                 String mensagemValidacao = "";
@@ -77,7 +77,7 @@ namespace FoodTruck.Grafico
 
         private void ManterCliente_Shown(object sender, EventArgs e)
         {
-            if(ClienteSelecionado != null)
+            if (ClienteSelecionado != null)
             {
                 this.tbId.Text = ClienteSelecionado.Id.ToString();
                 this.tbNome.Text = ClienteSelecionado.Nome;
