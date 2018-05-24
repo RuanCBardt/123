@@ -31,11 +31,6 @@ namespace FoodTruck.Grafico
             AbreTelaInclusaoAlteracao(null);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void Tela_FormClosed(object sender, FormClosedEventArgs e)
         {
             CarregarClientes();

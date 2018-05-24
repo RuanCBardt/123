@@ -165,7 +165,6 @@
             this.Name = "ManterCliente";
             this.Text = "ManterCliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ManterCliente_Load);
             this.Shown += new System.EventHandler(this.ManterCliente_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

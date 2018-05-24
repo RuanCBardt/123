@@ -66,11 +66,6 @@ namespace FoodTruck.Grafico
             }
         }
 
-        private void dgLanches_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btAdicionar_Click_1(object sender, EventArgs e)
         {
             AbreTelaInclusaoAlteracao(null);

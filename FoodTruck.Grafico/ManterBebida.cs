@@ -73,50 +73,5 @@ namespace FoodTruck.Grafico
                 this.tbTamanho.Text = BebidaSelecionada.Tamanho.ToString();
             }
         }
-
-        private void tbNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbValor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbTamanho_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ManterBebida_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -18,6 +18,11 @@ namespace FoodTruck.Grafico
             InitializeComponent();
         }
 
+        private void Tela_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            CarregarBebidas();
+        }
+
         private void AbreTelaInclusaoAlteracao(Bebida bebidaSelecionada)
         {
             ManterBebida tela = new ManterBebida();
@@ -31,12 +36,7 @@ namespace FoodTruck.Grafico
         {
             AbreTelaInclusaoAlteracao(null);
         }
-
-        private void Tela_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            CarregarBebidas();
-        }
-
+        
         private void CarregarBebidas()
         {
             dgBebidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

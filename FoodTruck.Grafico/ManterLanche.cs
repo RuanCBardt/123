@@ -56,11 +56,6 @@ namespace FoodTruck.Grafico
             this.Close();
         }
 
-        private void btCancelar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ManterLanche_Shown(object sender, EventArgs e)
         {
             if (LancheSelecionado != null)
@@ -69,41 +64,6 @@ namespace FoodTruck.Grafico
                 this.tbNome.Text = LancheSelecionado.Nome;
                 this.tbValor.Text = LancheSelecionado.Valor.ToString();
             }
-        }
-
-        private void ManterLanche_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbValor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btCancelar_Click_1(object sender, EventArgs e)

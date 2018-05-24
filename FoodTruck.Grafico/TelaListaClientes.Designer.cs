@@ -89,7 +89,6 @@
             this.dgClientes.RowTemplate.Height = 24;
             this.dgClientes.Size = new System.Drawing.Size(581, 306);
             this.dgClientes.TabIndex = 3;
-            this.dgClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Id
             // 

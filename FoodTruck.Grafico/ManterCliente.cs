@@ -70,11 +70,6 @@ namespace FoodTruck.Grafico
             this.Close();
         }
 
-        private void ManterCliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ManterCliente_Shown(object sender, EventArgs e)
         {
             if (ClienteSelecionado != null)

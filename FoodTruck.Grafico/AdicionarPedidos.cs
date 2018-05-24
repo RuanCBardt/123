@@ -97,8 +97,6 @@ namespace FoodTruck.Grafico
             {
                 MessageBox.Show("Ocorreu um erro grave, fale com o Professor Defreitas.");
             }
-
-            
         }
     } 
 }
