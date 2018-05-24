@@ -40,10 +40,10 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(438, 18);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btCancelar.Location = new System.Drawing.Point(876, 35);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(98, 43);
+            this.btCancelar.Size = new System.Drawing.Size(196, 83);
             this.btCancelar.TabIndex = 37;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(438, 67);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(2);
+            this.btSalvar.Location = new System.Drawing.Point(876, 129);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(98, 43);
+            this.btSalvar.Size = new System.Drawing.Size(196, 83);
             this.btSalvar.TabIndex = 36;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
@@ -65,10 +65,10 @@
             this.tbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbNome.Location = new System.Drawing.Point(64, 54);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNome.Location = new System.Drawing.Point(128, 104);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(314, 20);
+            this.tbNome.Size = new System.Drawing.Size(624, 31);
             this.tbNome.TabIndex = 34;
             // 
             // tbValor
@@ -76,10 +76,10 @@
             this.tbValor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbValor.Location = new System.Drawing.Point(64, 90);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(2);
+            this.tbValor.Location = new System.Drawing.Point(128, 173);
+            this.tbValor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbValor.Name = "tbValor";
-            this.tbValor.Size = new System.Drawing.Size(314, 20);
+            this.tbValor.Size = new System.Drawing.Size(624, 31);
             this.tbValor.TabIndex = 35;
             // 
             // tbId
@@ -87,47 +87,47 @@
             this.tbId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbId.Location = new System.Drawing.Point(64, 18);
-            this.tbId.Margin = new System.Windows.Forms.Padding(2);
+            this.tbId.Location = new System.Drawing.Point(128, 35);
+            this.tbId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(314, 20);
+            this.tbId.Size = new System.Drawing.Size(624, 31);
             this.tbId.TabIndex = 33;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 92);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(36, 177);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.Size = new System.Drawing.Size(68, 25);
             this.label4.TabIndex = 32;
             this.label4.Text = "Valor:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 54);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(30, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(74, 25);
             this.label2.TabIndex = 31;
             this.label2.Text = "Nome:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(20, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 30;
             this.label1.Text = "Código:";
             // 
             // ManterLanche
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 203);
+            this.ClientSize = new System.Drawing.Size(1192, 390);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.tbNome);
@@ -136,8 +136,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ManterLanche";
             this.Text = "ManterLanche";
+            this.Load += new System.EventHandler(this.ManterLanche_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

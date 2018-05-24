@@ -43,7 +43,7 @@
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(774, 319);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(196, 83);
             this.btCancelar.TabIndex = 29;
@@ -54,7 +54,7 @@
             // btSalvar
             // 
             this.btSalvar.Location = new System.Drawing.Point(1000, 319);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(196, 83);
             this.btSalvar.TabIndex = 28;
@@ -68,7 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbNome.Location = new System.Drawing.Point(160, 115);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(4);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(1032, 31);
             this.tbNome.TabIndex = 25;
@@ -79,7 +79,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbValor.Location = new System.Drawing.Point(160, 185);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbValor.Margin = new System.Windows.Forms.Padding(4);
             this.tbValor.Name = "tbValor";
             this.tbValor.Size = new System.Drawing.Size(1032, 31);
             this.tbValor.TabIndex = 26;
@@ -90,7 +90,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTamanho.Location = new System.Drawing.Point(160, 250);
-            this.tbTamanho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTamanho.Margin = new System.Windows.Forms.Padding(4);
             this.tbTamanho.Name = "tbTamanho";
             this.tbTamanho.Size = new System.Drawing.Size(1032, 31);
             this.tbTamanho.TabIndex = 27;
@@ -101,7 +101,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbId.Location = new System.Drawing.Point(160, 44);
-            this.tbId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbId.Margin = new System.Windows.Forms.Padding(4);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(1032, 31);
             this.tbId.TabIndex = 24;
@@ -162,10 +162,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ManterBebida";
             this.Text = "ManterBebida";
-        
+            this.Shown += new System.EventHandler(this.ManterBebidas_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dgListaPedidos = new System.Windows.Forms.DataGridView();
+            this.btAlteraPedido = new System.Windows.Forms.Button();
+            this.brRemovePedido = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btAlteraPedido = new System.Windows.Forms.Button();
-            this.brRemovePedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgListaPedidos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,32 +47,12 @@
             this.Cliente,
             this.ValorTotal});
             this.dgListaPedidos.Location = new System.Drawing.Point(13, 13);
-            this.dgListaPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgListaPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.dgListaPedidos.Name = "dgListaPedidos";
             this.dgListaPedidos.RowTemplate.Height = 28;
             this.dgListaPedidos.Size = new System.Drawing.Size(1041, 451);
             this.dgListaPedidos.TabIndex = 0;
             this.dgListaPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaPedidos_CellContentClick);
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Código";
-            this.Id.Name = "Id";
-            // 
-            // DataCompra
-            // 
-            this.DataCompra.HeaderText = "Data do Pedido";
-            this.DataCompra.Name = "DataCompra";
-            // 
-            // Cliente
-            // 
-            this.Cliente.HeaderText = "Cliente";
-            this.Cliente.Name = "Cliente";
-            // 
-            // ValorTotal
-            // 
-            this.ValorTotal.HeaderText = "Valor Total";
-            this.ValorTotal.Name = "ValorTotal";
             // 
             // btAlteraPedido
             // 
@@ -93,6 +73,29 @@
             this.brRemovePedido.UseVisualStyleBackColor = true;
             this.brRemovePedido.Click += new System.EventHandler(this.brRemovePedido_Click);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Código";
+            this.Id.Name = "Id";
+            // 
+            // DataCompra
+            // 
+            this.DataCompra.DataPropertyName = "DataCompra";
+            this.DataCompra.HeaderText = "Data do Pedido";
+            this.DataCompra.Name = "DataCompra";
+            // 
+            // Cliente
+            // 
+            this.Cliente.DataPropertyName = "Cliente";
+            this.Cliente.HeaderText = "Cliente";
+            this.Cliente.Name = "Cliente";
+            // 
+            // ValorTotal
+            // 
+            this.ValorTotal.HeaderText = "Valor Total";
+            this.ValorTotal.Name = "ValorTotal";
+            // 
             // TelaListaPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -101,7 +104,7 @@
             this.Controls.Add(this.brRemovePedido);
             this.Controls.Add(this.btAlteraPedido);
             this.Controls.Add(this.dgListaPedidos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaListaPedidos";
             this.Text = "TelaListaPedidos";
             this.Load += new System.EventHandler(this.TelaListaPedidos_Load);
@@ -113,11 +116,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgListaPedidos;
+        private System.Windows.Forms.Button btAlteraPedido;
+        private System.Windows.Forms.Button brRemovePedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataCompra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
-        private System.Windows.Forms.Button btAlteraPedido;
-        private System.Windows.Forms.Button brRemovePedido;
     }
 }

@@ -13,6 +13,8 @@ namespace FoodTruck.Grafico
 {
     public partial class TelaListaClientes : Form
     {
+        public Cliente ClienteSelecionado { get; set; }
+
         public TelaListaClientes()
         {
             InitializeComponent();
