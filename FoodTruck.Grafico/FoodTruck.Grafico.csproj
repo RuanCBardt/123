@@ -75,6 +75,12 @@
     <Compile Include="ManterLanche.Designer.cs">
       <DependentUpon>ManterLanche.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManterPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManterPedido.Designer.cs">
+      <DependentUpon>ManterPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelaListaBebidas.cs">

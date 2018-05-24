@@ -28,34 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgListaPedidos = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btAlteraPedido = new System.Windows.Forms.Button();
+            this.brRemovePedido = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgListaPedidos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgListaPedidos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(797, 361);
-            this.dataGridView1.TabIndex = 0;
+            this.dgListaPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.DataCompra,
+            this.Cliente,
+            this.ValorTotal});
+            this.dgListaPedidos.Location = new System.Drawing.Point(13, 13);
+            this.dgListaPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgListaPedidos.Name = "dgListaPedidos";
+            this.dgListaPedidos.RowTemplate.Height = 28;
+            this.dgListaPedidos.Size = new System.Drawing.Size(1041, 451);
+            this.dgListaPedidos.TabIndex = 0;
+            this.dgListaPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaPedidos_CellContentClick);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Código";
+            this.Id.Name = "Id";
+            // 
+            // DataCompra
+            // 
+            this.DataCompra.HeaderText = "Data do Pedido";
+            this.DataCompra.Name = "DataCompra";
+            // 
+            // Cliente
+            // 
+            this.Cliente.HeaderText = "Cliente";
+            this.Cliente.Name = "Cliente";
+            // 
+            // ValorTotal
+            // 
+            this.ValorTotal.HeaderText = "Valor Total";
+            this.ValorTotal.Name = "ValorTotal";
+            // 
+            // btAlteraPedido
+            // 
+            this.btAlteraPedido.Location = new System.Drawing.Point(923, 482);
+            this.btAlteraPedido.Name = "btAlteraPedido";
+            this.btAlteraPedido.Size = new System.Drawing.Size(131, 57);
+            this.btAlteraPedido.TabIndex = 1;
+            this.btAlteraPedido.Text = "Alterar";
+            this.btAlteraPedido.UseVisualStyleBackColor = true;
+            // 
+            // brRemovePedido
+            // 
+            this.brRemovePedido.Location = new System.Drawing.Point(786, 482);
+            this.brRemovePedido.Name = "brRemovePedido";
+            this.brRemovePedido.Size = new System.Drawing.Size(131, 57);
+            this.brRemovePedido.TabIndex = 2;
+            this.brRemovePedido.Text = "Remover";
+            this.brRemovePedido.UseVisualStyleBackColor = true;
+            this.brRemovePedido.Click += new System.EventHandler(this.brRemovePedido_Click);
             // 
             // TelaListaPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1067, 562);
+            this.Controls.Add(this.brRemovePedido);
+            this.Controls.Add(this.btAlteraPedido);
+            this.Controls.Add(this.dgListaPedidos);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaListaPedidos";
             this.Text = "TelaListaPedidos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.TelaListaPedidos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgListaPedidos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgListaPedidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataCompra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
+        private System.Windows.Forms.Button btAlteraPedido;
+        private System.Windows.Forms.Button brRemovePedido;
     }
 }

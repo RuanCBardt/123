@@ -37,7 +37,7 @@ namespace FoodTruck.Grafico
             CarregarBebidas();
         }
 
-        private void CarregarBebidas()
+        public void CarregarBebidas()
         {
             dgBebidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgBebidas.MultiSelect = false;
@@ -91,6 +91,11 @@ namespace FoodTruck.Grafico
                 Bebida bebidaSelecionada = (Bebida)dgBebidas.SelectedRows[0].DataBoundItem;
                 AbreTelaInclusaoAlteracao(bebidaSelecionada);
             }
+        }
+
+        private void dgBebidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

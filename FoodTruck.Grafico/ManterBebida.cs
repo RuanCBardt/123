@@ -114,7 +114,9 @@ namespace FoodTruck.Grafico
 
         }
 
-        private void ManterBebida_Load(object sender, EventArgs e)
+        
+
+        private void tbId_TextChanged_1(object sender, EventArgs e)
         {
 
         }
