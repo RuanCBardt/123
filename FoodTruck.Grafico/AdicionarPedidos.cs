@@ -99,5 +99,39 @@ namespace FoodTruck.Grafico
                 MessageBox.Show("Ocorreu um erro grave, fale com o Professor Defreitas.");
             }
         }
+
+        private void btRemoverBebidaSelecionada_Click(object sender, EventArgs e)
+        {
+              Bebida bebidaSelecionada = (Bebida)cbBebidas.SelectedItem;
+              pedido.Bebidas.Remove(bebidaSelecionada);
+              CarregaDatagrids();
+              CarregaTotal();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lanche lancheSelecionado = (Lanche)cbLanches.SelectedItem;
+            pedido.Lanches.Remove(lancheSelecionado);
+            CarregaDatagrids();
+            CarregaTotal();
+        }
+
+        /*
+        private void btRemoverBebidaSelecionada_Click(object sender, EventArgs e)
+        {
+            Bebida bebidaSelecionada = (Bebida)dgBebidas.SelectedItem;
+            pedido.Bebidas.Remove(bebidaSelecionada);
+            CarregaDatagrids();
+            CarregaTotal();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lanche lancheSelecionado = (Lanche)dgLanches.SelectedItem;
+            pedido.Lanches.Remove(lancheSelecionado);
+            CarregaDatagrids();
+            CarregaTotal();
+        }
+        */
     } 
 }
