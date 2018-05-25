@@ -79,5 +79,28 @@ namespace FoodTruck.Grafico
                 }
             }
         }
+
+        private void Tela_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            CarregarPedidos();
+        }
+
+        private void AbreTelaAlteracao(Pedido pedidoSelecionado)
+        {
+            ManterPedido tela = new ManterPedido();
+            tela.MdiParent = this.MdiParent;
+            tela.pedidoSelecionado = pedidoSelecionado;
+            tela.FormClosed += Tela_FormClosed;
+            tela.Show();
+        }
+
+        private void btAlteraPedido_Click(object sender, EventArgs e)
+        {
+            if (VerificarSelecao())
+            {
+                Pedido pedidoSelecionado = (Pedido)dgListaPedidos.SelectedRows[0].DataBoundItem;
+                AbreTelaAlteracao(pedidoSelecionado);
+            }
+        }
     }
 }

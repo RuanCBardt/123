@@ -62,6 +62,7 @@
             this.btAlteraPedido.TabIndex = 1;
             this.btAlteraPedido.Text = "Alterar";
             this.btAlteraPedido.UseVisualStyleBackColor = true;
+            this.btAlteraPedido.Click += new System.EventHandler(this.btAlteraPedido_Click);
             // 
             // brRemovePedido
             // 
@@ -87,7 +88,7 @@
             // 
             // Cliente
             // 
-            this.Cliente.DataPropertyName = "Cliente";
+            this.Cliente.DataPropertyName = "NomeCliente";
             this.Cliente.HeaderText = "Cliente";
             this.Cliente.Name = "Cliente";
             // 

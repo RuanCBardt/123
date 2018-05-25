@@ -31,5 +31,13 @@ namespace FoodTruck.Negocio.Models
                 return totalLanches + totalBebidas;
             }   
         }
+
+        public String NomeCliente
+        {
+            get
+            {
+                return Cliente.Nome;
+            }
+        }
     }
 }
