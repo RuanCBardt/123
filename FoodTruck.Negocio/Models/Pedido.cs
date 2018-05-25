@@ -32,6 +32,7 @@ namespace FoodTruck.Negocio.Models
             }   
         }
 
+        [NotMapped]
         public String NomeCliente
         {
             get

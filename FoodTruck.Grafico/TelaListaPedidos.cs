@@ -33,20 +33,19 @@ namespace FoodTruck.Grafico
             dgListaPedidos.DataSource = pedidos;
         }
 
+        private void btVisualizaPedido_Click(object sender, EventArgs e)
+        {
+
+            AdicionarPedidos tela = new AdicionarPedidos();
+            tela.Show();
+
+        }
+
         private void TelaListaPedidos_Load(object sender, EventArgs e)
         {
             CarregarPedidos();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ManterPedido tela = new ManterPedido
-            {
-                MdiParent = this
-            };
-            tela.Show();
-        }
-
+        
         private bool VerificarSelecao()
         {
             if (dgListaPedidos.SelectedRows.Count <= 0)
@@ -80,27 +79,31 @@ namespace FoodTruck.Grafico
             }
         }
 
+
+
         private void Tela_FormClosed(object sender, FormClosedEventArgs e)
         {
             CarregarPedidos();
-        }
-
-        private void AbreTelaAlteracao(Pedido pedidoSelecionado)
-        {
-            ManterPedido tela = new ManterPedido();
-            tela.MdiParent = this.MdiParent;
-            tela.pedidoSelecionado = pedidoSelecionado;
-            tela.FormClosed += Tela_FormClosed;
-            tela.Show();
         }
 
         private void btAlteraPedido_Click(object sender, EventArgs e)
         {
             if (VerificarSelecao())
             {
-                Pedido pedidoSelecionado = (Pedido)dgListaPedidos.SelectedRows[0].DataBoundItem;
-                AbreTelaAlteracao(pedidoSelecionado);
+                Pedido PedidoSelecionado = (Pedido)dgListaPedidos.SelectedRows[0].DataBoundItem;
+                AbreTelaInclusaoAlteracao(PedidoSelecionado);
+
             }
+        }
+
+        private void AbreTelaInclusaoAlteracao(Pedido PedidoSelecionado)
+        {
+            AdicionarPedidos tela = new AdicionarPedidos();
+            tela.MdiParent = this.MdiParent;
+            tela.PedidoSelecionado = PedidoSelecionado;
+            tela.FormClosed += Tela_FormClosed;
+
+            tela.Show();
         }
     }
 }

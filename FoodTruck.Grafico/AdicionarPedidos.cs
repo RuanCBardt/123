@@ -17,6 +17,8 @@ namespace FoodTruck.Grafico
     {
         Pedido pedido = new Pedido();
 
+        public Pedido PedidoSelecionado { get; internal set; }
+
         public AdicionarPedidos()
         {
             InitializeComponent();

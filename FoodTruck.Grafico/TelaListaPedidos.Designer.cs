@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dgListaPedidos = new System.Windows.Forms.DataGridView();
-            this.btAlteraPedido = new System.Windows.Forms.Button();
-            this.brRemovePedido = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btAlteraPedido = new System.Windows.Forms.Button();
+            this.brRemovePedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgListaPedidos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,33 +46,13 @@
             this.DataCompra,
             this.Cliente,
             this.ValorTotal});
-            this.dgListaPedidos.Location = new System.Drawing.Point(13, 13);
-            this.dgListaPedidos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgListaPedidos.Location = new System.Drawing.Point(6, 7);
+            this.dgListaPedidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgListaPedidos.Name = "dgListaPedidos";
             this.dgListaPedidos.RowTemplate.Height = 28;
-            this.dgListaPedidos.Size = new System.Drawing.Size(1041, 451);
+            this.dgListaPedidos.Size = new System.Drawing.Size(520, 235);
             this.dgListaPedidos.TabIndex = 0;
             this.dgListaPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaPedidos_CellContentClick);
-            // 
-            // btAlteraPedido
-            // 
-            this.btAlteraPedido.Location = new System.Drawing.Point(923, 482);
-            this.btAlteraPedido.Name = "btAlteraPedido";
-            this.btAlteraPedido.Size = new System.Drawing.Size(131, 57);
-            this.btAlteraPedido.TabIndex = 1;
-            this.btAlteraPedido.Text = "Alterar";
-            this.btAlteraPedido.UseVisualStyleBackColor = true;
-            this.btAlteraPedido.Click += new System.EventHandler(this.btAlteraPedido_Click);
-            // 
-            // brRemovePedido
-            // 
-            this.brRemovePedido.Location = new System.Drawing.Point(786, 482);
-            this.brRemovePedido.Name = "brRemovePedido";
-            this.brRemovePedido.Size = new System.Drawing.Size(131, 57);
-            this.brRemovePedido.TabIndex = 2;
-            this.brRemovePedido.Text = "Remover";
-            this.brRemovePedido.UseVisualStyleBackColor = true;
-            this.brRemovePedido.Click += new System.EventHandler(this.brRemovePedido_Click);
             // 
             // Id
             // 
@@ -98,15 +78,37 @@
             this.ValorTotal.HeaderText = "Valor Total";
             this.ValorTotal.Name = "ValorTotal";
             // 
+            // btAlteraPedido
+            // 
+            this.btAlteraPedido.Location = new System.Drawing.Point(462, 251);
+            this.btAlteraPedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAlteraPedido.Name = "btAlteraPedido";
+            this.btAlteraPedido.Size = new System.Drawing.Size(66, 30);
+            this.btAlteraPedido.TabIndex = 1;
+            this.btAlteraPedido.Text = "Alterar";
+            this.btAlteraPedido.UseVisualStyleBackColor = true;
+            this.btAlteraPedido.Click += new System.EventHandler(this.btAlteraPedido_Click);
+            // 
+            // brRemovePedido
+            // 
+            this.brRemovePedido.Location = new System.Drawing.Point(393, 251);
+            this.brRemovePedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brRemovePedido.Name = "brRemovePedido";
+            this.brRemovePedido.Size = new System.Drawing.Size(66, 30);
+            this.brRemovePedido.TabIndex = 2;
+            this.brRemovePedido.Text = "Remover";
+            this.brRemovePedido.UseVisualStyleBackColor = true;
+            this.brRemovePedido.Click += new System.EventHandler(this.brRemovePedido_Click);
+            // 
             // TelaListaPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 562);
+            this.ClientSize = new System.Drawing.Size(534, 292);
             this.Controls.Add(this.brRemovePedido);
             this.Controls.Add(this.btAlteraPedido);
             this.Controls.Add(this.dgListaPedidos);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TelaListaPedidos";
             this.Text = "TelaListaPedidos";
             this.Load += new System.EventHandler(this.TelaListaPedidos_Load);
