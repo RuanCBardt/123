@@ -56,11 +56,6 @@ namespace FoodTruck.Grafico
             this.Close();
         }
 
-        private void btCancelar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ManterLanche_Shown(object sender, EventArgs e)
         {
             if (LancheSelecionado != null)

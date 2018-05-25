@@ -93,6 +93,7 @@
             // 
             // ValorTotal
             // 
+            this.ValorTotal.DataPropertyName = "ValorTotal";
             this.ValorTotal.HeaderText = "Valor Total";
             this.ValorTotal.Name = "ValorTotal";
             // 

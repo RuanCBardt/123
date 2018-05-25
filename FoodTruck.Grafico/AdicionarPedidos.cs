@@ -69,7 +69,7 @@ namespace FoodTruck.Grafico
 
         private void CarregaTotal()
         {
-            lbTotal.Text = pedido.ValorTotal().ToString();
+            lbTotal.Text = pedido.ValorTotal.ToString();
         }
 
         private void btSalvarPedido_Click(object sender, EventArgs e)
