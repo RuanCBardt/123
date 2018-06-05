@@ -76,30 +76,32 @@ namespace FoodTruck.Grafico
 
         private void btSalvarPedido_Click(object sender, EventArgs e)
         {
-            try
+            pedido.Cliente = cbClientes.SelectedItem as Cliente;
+            pedido.DataCompra = DateTime.Now;
+            Validacao validacao;
+            if (PedidoSelecionado == null)
             {
-                pedido.Cliente = cbClientes.SelectedItem as Cliente;
-                pedido.DataCompra = DateTime.Now;
-                Validacao validacao = Program.Gerenciador.CadastrarPedido(pedido);
-                if (validacao.Valido)
-                {
-                    MessageBox.Show("Pedido cadastrado com sucesso");
-                    this.Close();
-                }
-                else
-                {
-                    String msg = "";
-                    foreach (var mensagem in validacao.Mensagens)
-                    {
-                        msg += mensagem + Environment.NewLine;
-                    }
-                    MessageBox.Show(msg, "Erro");
-                }
-
-            }catch(Exception)
-            {
-                MessageBox.Show("Ocorreu um erro grave, fale com o Professor Defreitas.");
+                validacao = Program.Gerenciador.CadastrarPedido(pedido);
             }
+            else
+            {
+                validacao = Program.Gerenciador.AlterarPedido(pedido);
+            }
+            if (validacao.Valido)
+            {
+                MessageBox.Show("Pedido cadastrado com sucesso!");
+                this.Close();
+            }
+            else
+            {
+                String msg = "";
+                foreach (var mensagem in validacao.Mensagens)
+                {
+                    msg += mensagem + Environment.NewLine;
+                }
+                MessageBox.Show(msg, "Erro");
+            }
+            this.Close();
         }
 
         private void btRemoverBebidaSelecionada_Click(object sender, EventArgs e)
@@ -118,22 +120,16 @@ namespace FoodTruck.Grafico
             CarregaTotal();
         }
 
-        /*
-        private void btRemoverBebidaSelecionada_Click(object sender, EventArgs e)
+        private void AdicionarPedidos_Shown(object sender, EventArgs e)
         {
-            Bebida bebidaSelecionada = (Bebida)dgBebidas.SelectedItem;
-            pedido.Bebidas.Remove(bebidaSelecionada);
-            CarregaDatagrids();
-            CarregaTotal();
+            if (PedidoSelecionado != null)
+            {
+                this.cbClientes.SelectedItem = PedidoSelecionado.Cliente;
+                this.dgBebidas.DataSource = PedidoSelecionado.Bebidas.ToList();
+                this.dgLanches.DataSource = PedidoSelecionado.Lanches.ToList();
+                this.lbTotal.Text = PedidoSelecionado.ValorTotal.ToString();
+                pedido = PedidoSelecionado;
+            }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Lanche lancheSelecionado = (Lanche)dgLanches.SelectedItem;
-            pedido.Lanches.Remove(lancheSelecionado);
-            CarregaDatagrids();
-            CarregaTotal();
-        }
-        */
     } 
 }

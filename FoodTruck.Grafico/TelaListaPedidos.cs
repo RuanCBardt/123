@@ -35,10 +35,8 @@ namespace FoodTruck.Grafico
 
         private void btVisualizaPedido_Click(object sender, EventArgs e)
         {
-
             AdicionarPedidos tela = new AdicionarPedidos();
             tela.Show();
-
         }
 
         private void TelaListaPedidos_Load(object sender, EventArgs e)
@@ -79,8 +77,6 @@ namespace FoodTruck.Grafico
             }
         }
 
-
-
         private void Tela_FormClosed(object sender, FormClosedEventArgs e)
         {
             CarregarPedidos();
@@ -92,7 +88,6 @@ namespace FoodTruck.Grafico
             {
                 Pedido PedidoSelecionado = (Pedido)dgListaPedidos.SelectedRows[0].DataBoundItem;
                 AbreTelaInclusaoAlteracao(PedidoSelecionado);
-
             }
         }
 
@@ -102,7 +97,6 @@ namespace FoodTruck.Grafico
             tela.MdiParent = this.MdiParent;
             tela.PedidoSelecionado = PedidoSelecionado;
             tela.FormClosed += Tela_FormClosed;
-
             tela.Show();
         }
     }

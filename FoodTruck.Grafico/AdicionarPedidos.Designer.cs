@@ -58,19 +58,17 @@ namespace FoodTruck.Grafico
             // cbClientes
             // 
             this.cbClientes.FormattingEnabled = true;
-            this.cbClientes.Location = new System.Drawing.Point(113, 18);
-            this.cbClientes.Margin = new System.Windows.Forms.Padding(6);
+            this.cbClientes.Location = new System.Drawing.Point(56, 9);
             this.cbClientes.Name = "cbClientes";
-            this.cbClientes.Size = new System.Drawing.Size(456, 33);
+            this.cbClientes.Size = new System.Drawing.Size(230, 21);
             this.cbClientes.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(8, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 25);
+            this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cliente:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -78,10 +76,9 @@ namespace FoodTruck.Grafico
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 120);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(6, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 25);
+            this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bebidas";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -89,37 +86,33 @@ namespace FoodTruck.Grafico
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(879, 120);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(440, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 25);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Lanches";
             // 
             // cbBebidas
             // 
             this.cbBebidas.FormattingEnabled = true;
-            this.cbBebidas.Location = new System.Drawing.Point(113, 115);
-            this.cbBebidas.Margin = new System.Windows.Forms.Padding(6);
+            this.cbBebidas.Location = new System.Drawing.Point(56, 60);
             this.cbBebidas.Name = "cbBebidas";
-            this.cbBebidas.Size = new System.Drawing.Size(482, 33);
+            this.cbBebidas.Size = new System.Drawing.Size(243, 21);
             this.cbBebidas.TabIndex = 4;
             // 
             // cbLanches
             // 
             this.cbLanches.FormattingEnabled = true;
-            this.cbLanches.Location = new System.Drawing.Point(987, 115);
-            this.cbLanches.Margin = new System.Windows.Forms.Padding(6);
+            this.cbLanches.Location = new System.Drawing.Point(494, 60);
             this.cbLanches.Name = "cbLanches";
-            this.cbLanches.Size = new System.Drawing.Size(482, 33);
+            this.cbLanches.Size = new System.Drawing.Size(243, 21);
             this.cbLanches.TabIndex = 5;
             // 
             // btAdicionaBebida
             // 
-            this.btAdicionaBebida.Location = new System.Drawing.Point(611, 111);
-            this.btAdicionaBebida.Margin = new System.Windows.Forms.Padding(6);
+            this.btAdicionaBebida.Location = new System.Drawing.Point(306, 58);
             this.btAdicionaBebida.Name = "btAdicionaBebida";
-            this.btAdicionaBebida.Size = new System.Drawing.Size(46, 44);
+            this.btAdicionaBebida.Size = new System.Drawing.Size(23, 23);
             this.btAdicionaBebida.TabIndex = 6;
             this.btAdicionaBebida.Text = "+";
             this.btAdicionaBebida.UseVisualStyleBackColor = true;
@@ -127,10 +120,9 @@ namespace FoodTruck.Grafico
             // 
             // btAdicionaLanche
             // 
-            this.btAdicionaLanche.Location = new System.Drawing.Point(1485, 111);
-            this.btAdicionaLanche.Margin = new System.Windows.Forms.Padding(6);
+            this.btAdicionaLanche.Location = new System.Drawing.Point(742, 58);
             this.btAdicionaLanche.Name = "btAdicionaLanche";
-            this.btAdicionaLanche.Size = new System.Drawing.Size(46, 44);
+            this.btAdicionaLanche.Size = new System.Drawing.Size(23, 23);
             this.btAdicionaLanche.TabIndex = 7;
             this.btAdicionaLanche.Text = "+";
             this.btAdicionaLanche.UseVisualStyleBackColor = true;
@@ -143,10 +135,9 @@ namespace FoodTruck.Grafico
             this.Nome,
             this.Tamanho,
             this.Preco});
-            this.dgBebidas.Location = new System.Drawing.Point(113, 166);
-            this.dgBebidas.Margin = new System.Windows.Forms.Padding(6);
+            this.dgBebidas.Location = new System.Drawing.Point(56, 86);
             this.dgBebidas.Name = "dgBebidas";
-            this.dgBebidas.Size = new System.Drawing.Size(686, 554);
+            this.dgBebidas.Size = new System.Drawing.Size(343, 288);
             this.dgBebidas.TabIndex = 8;
             this.dgBebidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBebidas_CellContentClick);
             // 
@@ -174,10 +165,9 @@ namespace FoodTruck.Grafico
             this.dgLanches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NomeLanche,
             this.ValorLanche});
-            this.dgLanches.Location = new System.Drawing.Point(987, 166);
-            this.dgLanches.Margin = new System.Windows.Forms.Padding(6);
+            this.dgLanches.Location = new System.Drawing.Point(494, 86);
             this.dgLanches.Name = "dgLanches";
-            this.dgLanches.Size = new System.Drawing.Size(686, 554);
+            this.dgLanches.Size = new System.Drawing.Size(343, 288);
             this.dgLanches.TabIndex = 9;
             // 
             // NomeLanche
@@ -194,10 +184,9 @@ namespace FoodTruck.Grafico
             // 
             // btSalvarPedido
             // 
-            this.btSalvarPedido.Location = new System.Drawing.Point(1523, 766);
-            this.btSalvarPedido.Margin = new System.Windows.Forms.Padding(6);
+            this.btSalvarPedido.Location = new System.Drawing.Point(762, 398);
             this.btSalvarPedido.Name = "btSalvarPedido";
-            this.btSalvarPedido.Size = new System.Drawing.Size(150, 44);
+            this.btSalvarPedido.Size = new System.Drawing.Size(75, 23);
             this.btSalvarPedido.TabIndex = 10;
             this.btSalvarPedido.Text = "Salvar";
             this.btSalvarPedido.UseVisualStyleBackColor = true;
@@ -206,29 +195,26 @@ namespace FoodTruck.Grafico
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(107, 776);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(54, 404);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Valor Total:";
             // 
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
-            this.lbTotal.Location = new System.Drawing.Point(241, 776);
-            this.lbTotal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbTotal.Location = new System.Drawing.Point(120, 404);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(0, 25);
+            this.lbTotal.Size = new System.Drawing.Size(0, 13);
             this.lbTotal.TabIndex = 12;
             this.lbTotal.Click += new System.EventHandler(this.lbTotal_Click);
             // 
             // btRemoverBebidaSelecionada
             // 
-            this.btRemoverBebidaSelecionada.Location = new System.Drawing.Point(669, 111);
-            this.btRemoverBebidaSelecionada.Margin = new System.Windows.Forms.Padding(6);
+            this.btRemoverBebidaSelecionada.Location = new System.Drawing.Point(334, 58);
             this.btRemoverBebidaSelecionada.Name = "btRemoverBebidaSelecionada";
-            this.btRemoverBebidaSelecionada.Size = new System.Drawing.Size(46, 44);
+            this.btRemoverBebidaSelecionada.Size = new System.Drawing.Size(23, 23);
             this.btRemoverBebidaSelecionada.TabIndex = 13;
             this.btRemoverBebidaSelecionada.Text = "-";
             this.btRemoverBebidaSelecionada.UseVisualStyleBackColor = true;
@@ -236,10 +222,9 @@ namespace FoodTruck.Grafico
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1543, 111);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Location = new System.Drawing.Point(772, 58);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 44);
+            this.button1.Size = new System.Drawing.Size(23, 23);
             this.button1.TabIndex = 14;
             this.button1.Text = "-";
             this.button1.UseVisualStyleBackColor = true;
@@ -247,10 +232,10 @@ namespace FoodTruck.Grafico
             // 
             // AdicionarPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1683, 825);
+            this.ClientSize = new System.Drawing.Size(844, 429);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btRemoverBebidaSelecionada);
             this.Controls.Add(this.lbTotal);
@@ -266,10 +251,10 @@ namespace FoodTruck.Grafico
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbClientes);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AdicionarPedidos";
             this.Text = "AdicionarPedidos";
             this.Load += new System.EventHandler(this.AdicionarPedidos_Load);
+            this.Shown += new System.EventHandler(this.AdicionarPedidos_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgBebidas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgLanches)).EndInit();
             this.ResumeLayout(false);
